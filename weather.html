@@ -15,51 +15,45 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    
+      
+      <div class="border">
     <div class="container">
       <form class="search-city" id="search-form">
-      <div class="row1">
-        <div class="col">
-          <input 
-          type="search" id="city-Input"placeholder="Search City..." autofocus="on" autocomplete="off"
-          class=""
-          />
-            
-         
+        <div class="row1">
+          <div class="col">
+            <input class="search"
+              type="search"
+              id="city-Input"
+              placeholder="Search City..."
+              autofocus="on"
+              autocomplete="off"
+              
+            />
+            <input class="searchbtn" type="submit" value="Search"/>
+          </div>
         </div>
-        </form>
-      </div>
+      </form>
 
       <div class="row">
         <div class="col-6">
-          
-            <h1 id=city><h1>
-            <ul>
-              <li class="selectedCity"></li>
+          <h1 id="city"></h1>
+          <ul>
+            <li class="selectedCity"></li>
             <li id="date"></li>
-            <li id="description">
-              
-            </li>
+            <li id="description"></li>
           </ul>
-          <a href="#"></a>
         </div>
         <div class="col-6">
           <ul>
             <li class="currentPic">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-            alt="cloudy"
-          />
-          </li>
-          <li>
-          <span  id="temperature" class="temperature"
-            ></span>°c
-          </li>
-          <li>
-            Humidity:<span id="humidity"></span>%
-          </li>
-            Wind:<span id= "wind"></span>Km/h
-          </li>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                alt="cloudy"
+              />
+            </li>
+            <li><span id="temperature" class="temperature"></span>°c</li>
+            <li>Humidity:<span id="humidity"></span>%</li>
+            <li>Wind:<span id="wind"></span>Km/h</li>
           </ul>
         </div>
       </div>
@@ -123,6 +117,8 @@
         </div>
       </div>
     </div>
+</div>
+    </body>
     <script src="app.js/script.js"></script>
   </body>
 </html>
