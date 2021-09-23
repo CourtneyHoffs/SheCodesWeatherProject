@@ -1,5 +1,5 @@
 body {
-  background-image: url(clouds.jpg/images);
+  background-image: url(./images/clouds.jpg);
 }
 
 input {
@@ -33,6 +33,7 @@ ul {
   background: rgb(187, 202, 243);
   border-radius: 15px;
   border-color: lightblue;
+  position: sticky;
 }
 .searchbtn {
   border-radius: 15px;
